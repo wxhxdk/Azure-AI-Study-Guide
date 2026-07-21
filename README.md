@@ -1,59 +1,173 @@
 # AI-901 学习指南
 
-> 面向 **Microsoft Azure AI Fundamentals（AI-901）** 认证考试的中文学习手册
-> 基于 **2026 年最新 AI-901 考试技能范围**整理。
+> 面向 **Microsoft Azure AI Fundamentals（AI-901）** 认证考试的中文学习手册。
+> 本项目根据 Microsoft 当前公布的 AI-901 考试技能范围整理，结合 AI 基础知识、Azure AI 和 Microsoft Foundry 的实际应用进行学习。
 
 ---
 
-## 📚 关于本项目
+# 📚 关于本项目
 
-本项目是一份面向 AI-901 认证考试的中文学习资料。
+本项目是一份面向 **AI-901 认证考试**的中文学习资料。
 
 目标是帮助学习者系统掌握：
 
-* AI 基础概念
+* Artificial Intelligence（AI）基础概念
 * Machine Learning 基础
+* Deep Learning 基础
 * Responsible AI
 * AI Workloads
 * Generative AI
+* Foundation Models
 * Microsoft Foundry
+* Prompt Engineering
 * AI Agents
 * Computer Vision
+* Natural Language Processing
 * Speech
 * Information Extraction
-* AI 应用开发基础
 
-本项目不仅关注考试知识点，同时尽量结合 Azure 和 Microsoft Foundry 的实际应用场景，帮助理解 AI 技术在实际项目中的使用方式。
+本项目不仅关注考试知识点，也尽量结合 Azure 和 Microsoft Foundry 的实际应用场景，帮助理解 AI 技术在真实项目中的使用方式。
 
 ---
 
-# 🎯 AI-901 考试范围
+# 🎓 AI-901 考试介绍
 
-根据 Microsoft 最新的 AI-901 Skills Measured，考试主要分为两个部分：
+## 什么是 AI-901？
+
+**AI-901: Microsoft Azure AI Fundamentals** 是 Microsoft 面向 AI 初学者和技术人员推出的基础级认证考试。
+
+该考试主要用于验证考生是否理解：
+
+* AI 的基本概念
+* Machine Learning 的基础知识
+* Generative AI 的基本概念
+* Responsible AI
+* 不同 AI Workloads 的特点
+* Microsoft Foundry 中 AI 解决方案的基本实现方式
+* Azure AI 服务和工具的基本应用场景
+
+AI-901 更关注：
+
+> **理解 AI 技术、识别 AI 工作负载，并选择适合的 AI 解决方案。**
+
+它并不要求考生成为 AI 算法专家，也不是以复杂数学推导为主要考察内容。
+
+因此，学习重点应该放在：
+
+```text
+理解概念
+    ↓
+识别场景
+    ↓
+选择 AI Workload
+    ↓
+选择合适的模型或服务
+    ↓
+理解基本实现方式
+```
+
+---
+
+## AI-901 适合哪些人？
+
+AI-901 适合：
+
+* AI 初学者
+* 软件开发人员
+* 云计算工程师
+* Azure 初学者
+* 希望进入 AI 领域的技术人员
+* 希望了解 Generative AI 的开发人员
+* 准备进一步学习 Azure AI、Machine Learning 或 Microsoft Foundry 的人员
+
+如果具备一定的编程或云计算基础，通常可以更快理解 AI 服务和实际应用场景。
+
+AI-901 属于基础级认证，通常不要求具备高级数学或深度学习算法背景。
+
+---
+
+# 📊 AI-901 最新考试范围
+
+根据 Microsoft 当前公布的 AI-901 Skills Measured，考试主要分为两个部分：
 
 | 考试领域                            |     权重 |
 | ------------------------------- | -----: |
 | 识别 AI 概念和功能                     | 40–45% |
 | 使用 Microsoft Foundry 实现 AI 解决方案 | 55–60% |
 
-因此，本学习手册分为两大部分：
+这意味着当前 AI-901 的学习重点已经明显偏向：
+
+> **Microsoft Foundry + Generative AI + AI 应用实现**
+
+因此，本项目不会只介绍传统 AI 理论，而是按照：
 
 ```text
-AI 基础知识
-      ↓
-理解 AI 概念和工作负载
-      ↓
+AI 基础
+    ↓
+Machine Learning
+    ↓
+Responsible AI
+    ↓
+AI Workloads
+    ↓
 Microsoft Foundry
-      ↓
+    ↓
 Generative AI
-      ↓
-Prompt
-      ↓
+    ↓
+Prompt Engineering
+    ↓
 AI Agents
-      ↓
-Vision / Speech / Information Extraction
-      ↓
-AI 应用实现
+    ↓
+具体 AI 解决方案
+```
+
+逐步学习。
+
+---
+
+# 🧭 AI-901 学习重点
+
+整个考试可以理解为三个层次：
+
+```text
+第一层
+理解 AI 基础概念
+        ↓
+第二层
+识别不同 AI Workloads 和模型
+        ↓
+第三层
+使用 Microsoft Foundry 实现 AI 解决方案
+```
+
+核心知识结构：
+
+```text
+AI 基础
+│
+├── Artificial Intelligence
+├── Machine Learning
+├── Deep Learning
+├── Generative AI
+└── Responsible AI
+
+AI Workloads
+│
+├── Computer Vision
+├── Natural Language Processing
+├── Speech
+├── Generative AI
+└── Information Extraction
+
+Microsoft Foundry
+│
+├── Model Catalog
+├── Model Deployment
+├── Generative AI Models
+├── Prompt Engineering
+├── AI Agents
+├── Foundry Tools
+└── Foundry SDK
 ```
 
 ---
@@ -66,14 +180,16 @@ AI 应用实现
 
 主要内容：
 
-* 什么是 Artificial Intelligence
-* AI 的基本概念
+* Artificial Intelligence
+* AI Model
 * Machine Learning
 * Deep Learning
 * Generative AI
+* Training
+* Inference
+* AI 的常见应用
 * AI 与传统软件的区别
-* AI 的常见应用场景
-* AI 模型的基本概念
+* AI Workloads 基础
 
 📄 [第1章 AI 基础概念](chapters/01-ai-concepts.md)
 
@@ -83,7 +199,7 @@ AI 应用实现
 
 主要内容：
 
-* Machine Learning 是什么
+* Machine Learning
 * Supervised Learning
 * Unsupervised Learning
 * Regression
@@ -128,7 +244,7 @@ AI 应用实现
 * Speech
 * Generative AI
 * Information Extraction
-* AI 工作负载的选择
+* 不同 AI Workload 的选择
 
 📄 [第4章 AI Workloads](chapters/04-ai-workloads.md)
 
@@ -343,8 +459,6 @@ Information Extraction
 综合练习
 ```
 
-不要只记忆服务名称。
-
 学习每个 AI 服务时，建议重点理解：
 
 1. **它是什么？**
@@ -354,6 +468,12 @@ Information Extraction
 5. **什么时候应该使用？**
 6. **与其他服务有什么区别？**
 
+不要只记忆服务名称。
+
+真正需要掌握的是：
+
+> **在什么场景下，为什么选择这个 AI 服务或模型。**
+
 ---
 
 # 📝 每章内容结构
@@ -361,6 +481,7 @@ Information Extraction
 每个章节统一按照以下结构整理：
 
 ```text
+0. AI-901 考试介绍（简版）
 1. 本章学习目标
 2. 核心概念
 3. Azure / Microsoft Foundry 相关服务
@@ -373,24 +494,16 @@ Information Extraction
 10. 本章知识结构
 ```
 
-这样可以同时满足：
+每章的内容都尽量做到：
 
-* 学习理解
-* 考试复习
-* 快速查阅
-* GitHub 长期维护
+> **理解 → 对比 → 场景 → 考点 → 练习**
 
 ---
 
-# 📌 AI-901 核心知识地图
+# 🗺️ AI-901 核心知识地图
 
 ```text
-AI
-│
-├── AI Concepts
-│     ├── Machine Learning
-│     ├── Deep Learning
-│     └── Generative AI
+Artificial Intelligence
 │
 ├── Machine Learning
 │     ├── Supervised Learning
@@ -398,6 +511,8 @@ AI
 │     ├── Regression
 │     ├── Classification
 │     └── Clustering
+│
+├── Deep Learning
 │
 ├── Responsible AI
 │     ├── Fairness
@@ -481,14 +596,15 @@ Foundry SDK
 
 # 🛠️ Azure AI 学习资源
 
-官方学习资料：
+建议优先使用 Microsoft 官方学习资源：
 
 * Microsoft Learn
 * AI-901 官方考试页面
+* AI-901 Skills Measured
 * Microsoft Foundry 文档
 * Azure AI 服务文档
 
-建议优先参考 Microsoft 官方资料，本项目主要用于：
+本项目主要用于：
 
 * 中文理解
 * 知识整理
@@ -498,19 +614,19 @@ Foundry SDK
 
 ---
 
-# ⚠️ 免责声明
+# 📌 学习注意事项
 
-本项目是个人学习资料整理，不是 Microsoft 官方考试题库，也不代表 Microsoft 官方认证内容。
+AI-901 考试内容和技能范围可能随着 Microsoft 的更新而变化。
 
-考试内容和技能测评范围可能会随着 Microsoft 的更新而发生变化。
+因此，本项目中的内容主要用于学习和复习。
 
-准备考试时，请以 Microsoft 官方最新的：
+在参加正式考试之前，应再次确认 Microsoft 官方最新的：
 
+* AI-901 Exam Details
 * AI-901 Skills Measured
-* Microsoft Learn
-* Exam Details
+* Microsoft Learn 学习内容
 
-为最终参考依据。
+并以官方信息作为最终参考。
 
 ---
 
@@ -542,7 +658,7 @@ Foundry SDK
 
 ---
 
-## 📚 当前学习进度
+# 📊 当前学习进度
 
 | 章节   | 内容                     | 状态 |
 | ---- | ---------------------- | -- |
@@ -561,10 +677,48 @@ Foundry SDK
 
 ---
 
-## 📖 推荐学习顺序
+# 📖 推荐学习顺序
 
-> **先理解 AI 基础 → 再理解 AI 工作负载 → 再进入 Microsoft Foundry → 最后重点学习 Generative AI、Prompt、Agent 和具体 AI 解决方案。**
+> **先理解 AI 基础 → 再理解 Machine Learning → 掌握 Responsible AI → 理解不同 AI Workloads → 学习 Microsoft Foundry → 深入 Generative AI → 学习 Prompt 和 AI Agents → 学习具体 AI 解决方案 → 最后通过综合练习进行查漏补缺。**
 
 ---
 
-**目标：用一套中文、结构化、面向考试和实践的资料，系统完成 AI-901 学习。**
+# 🎯 最终目标
+
+本项目希望建立一套完整的 AI-901 学习路径：
+
+```text
+AI 基础知识
+      ↓
+Machine Learning
+      ↓
+Responsible AI
+      ↓
+AI Workloads
+      ↓
+Microsoft Foundry
+      ↓
+Generative AI
+      ↓
+Prompt Engineering
+      ↓
+AI Agents
+      ↓
+Azure AI Solutions
+      ↓
+AI-901 综合练习
+      ↓
+AI-901 Certification
+```
+
+> **目标不是单纯背题通过考试，而是通过 AI-901 建立 Azure AI 和 Generative AI 的基础知识体系，为后续学习 Azure AI、Machine Learning、Microsoft Foundry 和 AI 应用开发打下基础。**
+
+---
+
+## ⚠️ 免责声明
+
+本项目是个人学习资料整理，不是 Microsoft 官方考试题库，也不代表 Microsoft 官方认证内容。
+
+考试内容和技能测评范围可能会随着 Microsoft 的更新而发生变化。
+
+准备考试时，请始终以 Microsoft 官方最新公布的考试信息和学习资料为最终参考依据。
